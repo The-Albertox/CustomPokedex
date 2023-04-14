@@ -51,7 +51,17 @@ public class PokemonNormal {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+    
+    @Override
+    public String toString() {
+        String info = "Nombre: " + nombre + "\n" +
+                "Tipo: " + tipo + "\n" +
+                "Altura: " + altura + "\n" +
+                "Peso: " + peso + "\n" +
+                "Descripción: " + descripcion;
 
+        return info;
+    }
    
 }
     
