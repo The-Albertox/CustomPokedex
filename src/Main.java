@@ -14,7 +14,7 @@ public class Main {
       int altura;
       String descripcion;
       String localizacion = " ";
-      int numero;
+      int nivel;
       String respuesta = " ";
       ListaInteigente listaAvistados = new ListaInteigente();
       ListaInteigente listaCapturados = new ListaInteigente();
@@ -50,7 +50,7 @@ public class Main {
             System.out.println("tipo: "); tipo = teclado.nextLine();
             System.out.println("localizacion: "); localizacion = teclado.nextLine();
 
-            PokemonLegendario pokemonLeg = new PokemonLegendario(nombre, tipo, numero, localizacion);
+            PokemonLegendario pokemonLeg = new PokemonLegendario(nombre, tipo, nivel, localizacion);
             System.out.println("\n" + "pokemon legendaio avistado aniadido" + "\n");
             break;
           
@@ -58,8 +58,8 @@ public class Main {
           System.out.println("Por favor inserte el número del pokemon que ha capturado");
 
           listaAvistados.mostrar(); 
-          numero = teclado.nextInt();
-          PokemonNormal pokemonCapturado = listaAvistados.retornar(numero);
+          nivel = teclado.nextInt();
+          PokemonNormal pokemonCapturado = listaAvistados.retornar(nivel);
 
           System.out.println("Pokemon añadido a capturados"); 
         listaCapturados.aniadir(pokemonCapturado);
