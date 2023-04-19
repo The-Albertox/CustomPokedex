@@ -5,7 +5,7 @@ import app.pokemon.normal.PokemonNormal;
 public class PokemonLegendario extends PokemonNormal {
     protected String localizacion;
 
-    public PokemonLegendario(String nombre, String tipo, int nivel, String localizacion) {
+    public PokemonLegendario(String nombre, String tipo, String localizacion) {
         super(nombre, tipo);
         this.localizacion = localizacion;
     }
