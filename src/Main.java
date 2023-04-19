@@ -49,7 +49,7 @@ public class Main {
             System.out.println("nombre: "); nombre = teclado.nextLine();
             System.out.println("tipo: "); tipo = teclado.nextLine();
             System.out.println("localizacion: "); localizacion = teclado.nextLine();
-            
+
             PokemonLegendario pokemonLeg = new PokemonLegendario(nombre, tipo, localizacion);
             System.out.println("\n" + "pokemon legendaio avistado aniadido" + "\n");
             break;
